@@ -1,21 +1,36 @@
-import resolve from '@rollup/plugin-node-resolve';
+/* import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import json from '@rollup/plugin-json';
 import {terser} from 'rollup-plugin-terser';
+import globals from 'rollup-plugin-node-globals';
+import babel from 'rollup-plugin-babel'; */
 
-// `npm run build` -> `production` is true
-// `npm run dev` -> `production` is false
-const production = !process.env.ROLLUP_WATCH;
-
-export default {
-  input: 'src/main.js',
+export default [{
+  input: 'src/server.js',
   output: {
-    file: 'public/bundle.js',
-    format: 'iife', // immediately-invoked function expression — suitable for <script> tags
+    file: 'public/server.js',
+    format: 'umd',
     sourcemap: true,
   },
-  plugins: [
-    resolve(), // tells Rollup how to find date-fns in node_modules
-    commonjs(), // converts date-fns to ES modules
-    production && terser(), // minify, but only in production
-  ],
-};
+  /* plugins: [
+    terser(),
+    babel({
+      exclude: 'node_modules/**'
+    }),
+    resolve({
+      preferBuiltins: true
+    }),
+    commonjs(),
+    json(),
+    globals()
+  ], */
+  external: ['express']
+},{
+  input: 'src/db.js',
+  output: {
+    file: 'public/db.js',
+    format: 'umd',
+    sourcemap: true,
+  },
+  external: ['mongoose']
+}];

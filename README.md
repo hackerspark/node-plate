@@ -2,7 +2,7 @@
 
 Base project for other JS based projects configured to play well with VSC
 <br>
-### Recommended Extensions
+### Recommended Extensions:
 
 * Auto Rename Tag
 * Azure Account
@@ -50,3 +50,26 @@ Base project for other JS based projects configured to play well with VSC
 * Visual Studio IntelliCode
 * XML
 * UNOTES -Markdown Notes WYSIWYG
+* Pastery
+
+<br>
+### Cheatsheets:
+
+* Rollup - [https://devhints.io/rollup](https://devhints.io/rollup)
+
+<br>
+### IMP Links:
+
+* Rollup plugins - [https://github.com/rollup/plugins](https://github.com/rollup/plugins)
+* Pastebin - [https://pastebin.com/](https://pastebin.com/)
+* Pastery - [https://www.pastery.net/](https://www.pastery.net/)
+* Rollup external dependency reference - [https://rollupjs.org/guide/en/#warning-treating-module-as-external-dependency](https://rollupjs.org/guide/en/#warning-treating-module-as-external-dependency)
+* Mogo Setup Reference - [https://zellwk.com/blog/local-mongodb/](https://zellwk.com/blog/local-mongodb/)
+* Robomongo - [https://robomongo.org/](https://robomongo.org/)
+* Mongoose Reference - [https://mongoosejs.com/docs/index.html](https://mongoosejs.com/docs/index.html)
+
+### Misc Notes:
+
+* Multi line comment in VSC is Alt + Shift + A
+* JSON Server - [https://www.npmjs.com/package/json-server](https://www.npmjs.com/package/json-server)  Setup may need adding node path to the PATH environment variable for the json-server command to work
+* .\mongod.exe --dbpath C:\MongoData\ to run mongodb server
