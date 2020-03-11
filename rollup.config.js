@@ -5,14 +5,15 @@ import {terser} from 'rollup-plugin-terser';
 import globals from 'rollup-plugin-node-globals';
 import babel from 'rollup-plugin-babel'; */
 
-export default [{
-  input: 'src/server.js',
-  output: {
-    file: 'public/server.js',
-    format: 'umd',
-    sourcemap: true,
-  },
-  /* plugins: [
+export default [
+  {
+    input: 'src/server.js',
+    output: {
+      file: 'public/server.js',
+      format: 'umd',
+      sourcemap: true
+    },
+    /* plugins: [
     terser(),
     babel({
       exclude: 'node_modules/**'
@@ -24,13 +25,15 @@ export default [{
     json(),
     globals()
   ], */
-  external: ['express']
-},{
-  input: 'src/db.js',
-  output: {
-    file: 'public/db.js',
-    format: 'umd',
-    sourcemap: true,
+    external: ['express']
   },
-  external: ['mongoose']
-}];
+  {
+    input: 'src/db.js',
+    output: {
+      file: 'public/db.js',
+      format: 'umd',
+      sourcemap: true
+    },
+    external: ['mongoose']
+  }
+];
