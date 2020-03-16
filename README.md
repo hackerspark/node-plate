@@ -73,3 +73,5 @@ Base project for other JS based projects configured to play well with VSC
 * Multi line comment in VSC is Alt + Shift + A
 * JSON Server - [https://www.npmjs.com/package/json-server](https://www.npmjs.com/package/json-server)  Setup may need adding node path to the PATH environment variable for the json-server command to work
 * .\mongod.exe --dbpath C:\MongoData\ to run mongodb server
+* [https://sequelize.org/](https://sequelize.org/)
+* [https://github.com/tomjschuster/sequelize-ui](https://github.com/tomjschuster/sequelize-ui)
