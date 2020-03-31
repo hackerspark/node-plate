@@ -75,3 +75,4 @@ Base project for other JS based projects configured to play well with VSC
 * .\mongod.exe --dbpath C:\MongoData\ to run mongodb server
 * [https://sequelize.org/](https://sequelize.org/)
 * [https://github.com/tomjschuster/sequelize-ui](https://github.com/tomjschuster/sequelize-ui)
+* [https://blog.angular-university.io/angular-jwt-authentication/](https://blog.angular-university.io/angular-jwt-authentication/)
